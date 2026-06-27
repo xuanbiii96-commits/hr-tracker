@@ -1,0 +1,149 @@
+{
+  "employees": [
+    {
+      "id": 1,
+      "name": "John Manager",
+      "email": "manager@company.com",
+      "password": "manager123",
+      "role": "manager",
+      "department": "Management",
+      "joinDate": "2020-01-15",
+      "leaveBalance": 20,
+      "phone": "+1-234-567-8901"
+    },
+    {
+      "id": 2,
+      "name": "Sarah Employee",
+      "email": "employee@company.com",
+      "password": "emp123",
+      "role": "employee",
+      "department": "Operations",
+      "joinDate": "2021-03-20",
+      "leaveBalance": 15,
+      "phone": "+1-234-567-8902"
+    },
+    {
+      "id": 3,
+      "name": "Mike Johnson",
+      "email": "mike@company.com",
+      "password": "mike123",
+      "role": "employee",
+      "department": "Operations",
+      "joinDate": "2021-06-10",
+      "leaveBalance": 16,
+      "phone": "+1-234-567-8903"
+    },
+    {
+      "id": 4,
+      "name": "Emily Davis",
+      "email": "emily@company.com",
+      "password": "emily123",
+      "role": "employee",
+      "department": "Operations",
+      "joinDate": "2022-01-05",
+      "leaveBalance": 18,
+      "phone": "+1-234-567-8904"
+    },
+    {
+      "id": 5,
+      "name": "Alex Brown",
+      "email": "alex@company.com",
+      "password": "alex123",
+      "role": "employee",
+      "department": "Operations",
+      "joinDate": "2022-04-12",
+      "leaveBalance": 14,
+      "phone": "+1-234-567-8905"
+    }
+  ],
+  "leaveRequests": [
+    {
+      "id": 1,
+      "employeeId": 2,
+      "startDate": "2026-07-01",
+      "endDate": "2026-07-05",
+      "leaveType": "Annual Leave",
+      "reason": "Vacation",
+      "status": "pending",
+      "approvedBy": null,
+      "appliedDate": "2026-06-20"
+    },
+    {
+      "id": 2,
+      "employeeId": 3,
+      "startDate": "2026-07-10",
+      "endDate": "2026-07-10",
+      "leaveType": "Sick Leave",
+      "reason": "Medical appointment",
+      "status": "approved",
+      "approvedBy": 1,
+      "appliedDate": "2026-06-15"
+    }
+  ],
+  "shifts": [
+    {
+      "id": 1,
+      "date": "2026-06-28",
+      "shiftName": "Morning Shift",
+      "startTime": "08:00",
+      "endTime": "16:00",
+      "assignedEmployees": [2, 3, 4],
+      "requiredStaff": 3,
+      "createdBy": 1
+    },
+    {
+      "id": 2,
+      "date": "2026-06-28",
+      "shiftName": "Evening Shift",
+      "startTime": "16:00",
+      "endTime": "00:00",
+      "assignedEmployees": [5],
+      "requiredStaff": 2,
+      "createdBy": 1
+    },
+    {
+      "id": 3,
+      "date": "2026-06-29",
+      "shiftName": "Morning Shift",
+      "startTime": "08:00",
+      "endTime": "16:00",
+      "assignedEmployees": [2, 4, 5],
+      "requiredStaff": 3,
+      "createdBy": 1
+    }
+  ],
+  "attendance": [
+    {
+      "id": 1,
+      "employeeId": 2,
+      "date": "2026-06-26",
+      "status": "present",
+      "checkInTime": "08:15",
+      "checkOutTime": "17:00"
+    },
+    {
+      "id": 2,
+      "employeeId": 3,
+      "date": "2026-06-26",
+      "status": "present",
+      "checkInTime": "08:00",
+      "checkOutTime": "17:15"
+    },
+    {
+      "id": 3,
+      "employeeId": 4,
+      "date": "2026-06-26",
+      "status": "absent",
+      "checkInTime": null,
+      "checkOutTime": null
+    },
+    {
+      "id": 4,
+      "employeeId": 5,
+      "date": "2026-06-26",
+      "status": "present",
+      "checkInTime": "07:45",
+      "checkOutTime": "17:30"
+    }
+  ]
+}
